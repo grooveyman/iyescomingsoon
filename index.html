@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="logo.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="international youth empowerment summit">
+    <meta name="keywords" content="iyes, iyesglobal, iyes 2022, iyes2022, iyes2021">
+    <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>iYES GLOBAL</title>
+
+    <style>
+        .body {
+            background-image: url('images/Group 2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80vh !important;
+            background-attachment: fixed;
+        }
+        
+        .center {
+            display: block;
+            margin-left: 45px;
+            margin-right: 0;
+            width: 70%;
+            margin-top: 20vh;
+            margin-bottom: auto;
+        }
+        
+        .span {
+            text-align: center !important;
+            font-size: 40px;
+        }
+        
+        .navbar-nav>a {
+            color: white;
+        }
+        
+        section {
+            color: white;
+            font-size: 30px;
+        }
+        
+        #menu2,
+        #menu3,
+        #menu4 {
+            display: none;
+        }
+        
+        .soon-text {
+            font-family: 'Montserrat';
+            font-size: 550%;
+            color: white;
+            line-height: 0.8;
+            animation: transitionIn 1.2s;
+        }
+        
+        img,
+        section {
+            animation: transitionUp 1.2s;
+        }
+        
+        @keyframes transitionIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes transitionUp {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .down-foot {
+            background-color: white;
+            /* margin-top: 20%; */
+            height: 30vh;
+            background-attachment: fixed;
+            text-align: center;
+            margin-top: 120px !important;
+        }
+        
+        .top,
+        .t {
+            background-attachment: fixed !important;
+        }
+        
+        .fb {
+            background-color: #3b5998;
+            height: 20vh;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding: 50px;
+            font-size: 50px;
+        }
+        
+        .tw {
+            background-color: #00acee;
+            height: 20vh;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding: 50px;
+            font-size: 50px;
+        }
+        
+        .ig {
+            background-color: #833AB4;
+            height: 20vh;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding: 50px;
+            font-size: 50px;
+        }
+        
+        .down {
+            height: 60vh;
+        }
+        
+        .fbb {
+            text-decoration: none !important;
+            color: white;
+        }
+        
+        .fbb:hover {
+            color: white;
+        }
+        
+        .motto {
+            display: none;
+        }
+        
+        @media screen and (max-width:480px) {
+            .navbar-toggler {
+                display: none;
+            }
+            .motto {
+                display: block;
+            }
+            #menu1,
+            #menu2,
+            #menu3,
+            #menu4 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid body parallax">
+        <div class="container">
+            <nav class="navbar main-nav navbar-expand-lg sticky-top">
+                <a class="navbar-brand" href=" {{route('home')}}">
+                    <img src="images/logo.png" width="60%" height="60%">
+                    <span class="brand-name"></span>
+                </a>
+                <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon navbar-dark text-white mt-1"> X </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link navtxt" href="#" onclick="showHome()"> HOME</a>
+                        <a class="nav-link navtxt" href="#" onclick="showAbout()">ABOUT</a>
+                        <a class="nav-link navtxt" href="#" onclick="showProject()">PROJECTS</a>
+                        <a class="nav-link navtxt" href="#" onclick="showContact()">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div class="row top" style="margin-top: 5%; margin-bottom: 5%;">
+                <div class="col-md-6 col-xs-6 col-lg-6 col-md-6 ">
+                    <div style="margin-top: 100px;">
+                        <p class="soon-text" style="background-attachment: fixed;">
+                            Coming Soon
+                        </p>
+                    </div>
+                    <p class="motto" style="color: white; font-size: 25px; margin-left: 1px;">I will, I can, I must</p>
+                    <section id="menu1">
+                        <p>I will</p>
+                    </section>
+
+                    <section id="menu2">
+                        <p>I can</p>
+                    </section>
+
+                    <section id="menu3">
+                        <p>I must</p>
+                    </section>
+
+                    <section id="menu4">
+                        <p></p>
+                    </section>
+                </div>
+
+                <div class="col-md-6 col-xs-6 col-lg-6 col-md-6 ">
+                    <img src="images/Group 1.png" width="70%" class="img-rounded" />
+                </div>
+            </div>
+
+
+
+
+            <div class="down-foot">
+                <div class="row">
+
+                    <div class="col-md-4 col-xs-4 col-lg-4 col-md-4  fb">
+                        <a class="fbb" href="https://web.facebook.com/IYESGLOBAL">
+                            Facebook
+                            </a>
+                    </div>
+
+                    <div class="col-md-4 col-xs-4 col-lg-4 col-md-4 tw">
+                        <a class="fbb" href="https://twitter.com/iyesglobal">
+                            Twitter
+                            </a>
+                    </div>
+                    <div class="col-md-4 col-xs-4 col-lg-4 col-md-4 ig">
+                        <a class="fbb" href="https://www.instagram.com/iyesglobal/">
+                            Instagram
+                            </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="down">
+
+            </div>
+
+</body>
+
+<script rel="text/javascsript">
+    function showHome() {
+        for (var i = 1; i <= 4; i++) {
+            if ("menu" + i == "menu1") {
+                var menu = document.getElementById("menu" + i);
+                menu.style.display = "block";
+            } else {
+                var menu = document.getElementById("menu" + i);
+                menu.style.display = "none";
+            }
+        }
+    }
+
+    function showAbout() {
+        for (var i = 1; i <= 4; i++) {
+            if ("menu" + i == "menu2") {
+                var menu = document.getElementById("menu" + i);
+                menu.style.display = "block";
+            } else {
+                var menu = document.getElementById("menu" + i);
+                menu.style.display = "none";
+            }
+        }
+    }
+
+    function showProject() {
+        for (var i = 1; i <= 4; i++) {
+            if ("menu" + i == "menu3") {
+                var menu = document.getElementById("menu" + i);
+                menu.style.display = "block";
+            } else {
+                var menu = document.getElementById("menu" + i);
+                menu.style.display = "none";
+            }
+        }
+    }
+
+    function showContact() {
+        for (var i = 1; i <= 4; i++) {
+            if ("menu" + i == "menu4") {
+                var menu = document.getElementById("menu" + i);
+                menu.style.display = "block";
+            } else {
+                var menu = document.getElementById("menu" + i);
+                menu.style.display = "none";
+            }
+        }
+    }
+
+    const parallax = document.getElementById("down-foot");
+
+    window.addEventListener("scroll", function() {
+        let offset = window.pageYOffset;
+        parallax.style.backgroundPositionY = offset * 2.7 + "px";
+    });
+</script>
+
+</html>
